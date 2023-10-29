@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+html{ 
+  font-size: 62.5%
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  background: #0f0f0f;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: relative;
+    pointer-events: none;
+}
+.image {
+    background-image: url("bg.png");
+    width: 100vw;
+    height: 26rem;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}
+.name {
+    text-align: center;
+    position: relative;
+    transform: translateY(-1rem);
+    color: #ffffff;
+}
+
+.glass {
+    --clr-blck: rgb(33,33,33);
+    --clr-graym: rgb(26,26,26);
+    background-image: linear-gradient(#1a1a1a,#212121);
+    opacity: 66.66%;
+    width: 22.5rem;
+    height: 22.5rem;
+    border-radius: .6rem;
+}
+
+.blured-name {
+    background-image:
+      linear-gradient(45deg,#FF2121, #FFCE00);
+    
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: blur(.2rem);
+    
+    position: relative;
+    transform: 
+      translateY(-9rem)
+      translateX(6.5rem);
+    font-size: 2.3rem;    
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 1rem;
+    width: 82vw;
+    border-radius: 2rem;
+    background: #535353;
+    
+}
+
+.ul > li {
+    list-style: none;
+}
+.ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 1rem;
+}
+.ti{
+    text-align: center;    
+    position: relative;
+    transform: translateY(1rem);
+    font-size: 3.5rem;
+    transition: .5s ease-in;
+}
+span {
+    position: relative;
+    transform: translateY(1rem);
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: .56s ease-in-out;
+}
+
+/* animation */ 
+
+li:hover span {
+    opacity: 1;
+    transform: translateY(-0.5rem);
+
+}
+li:hover .ti {
+    transform: translateY(-1rem);
+}
